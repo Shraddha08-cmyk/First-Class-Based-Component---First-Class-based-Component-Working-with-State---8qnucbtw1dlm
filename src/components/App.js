@@ -1,13 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react'
+import '../styles/App.css';
 
-export const WordInput = ({handleChange,value}) => {
-    return (
-        <>   
-            <label htmlFor="word-input">Enter word to be highlighted here</label>
-            <input id="word-input" type={"text"} onChange={(e)=>handleChange(e.target.value)} value={value}/>
-        </>
-    )
-}
+class App extends Component {
+ constructor(props){
+    super(props)
+    this.state={name: "John Doe", enrollmentNo: "12345678", age: 34}
+ }
 
  handleButtonClick() {
     this.setState({
@@ -29,4 +27,4 @@ export const WordInput = ({handleChange,value}) => {
 
 
 export default App;
-
+Footer
