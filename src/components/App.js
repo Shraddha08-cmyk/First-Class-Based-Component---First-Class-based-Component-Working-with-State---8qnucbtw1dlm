@@ -9,6 +9,13 @@ export const WordInput = ({handleChange,value}) => {
     )
 }
 
+ handleButtonClick() {
+    this.setState({
+    age:this.state.age+1
+    })
+ }
+
+
     render() {
         return (
             <>
