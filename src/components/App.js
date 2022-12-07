@@ -1,9 +1,10 @@
-import React from 'react'
-import '../styles/App.css';
+import React from 'react';
 
-class App extends React.Component {
-  
+export const WordInput = ({handleChange,value}) => {
+    return (
+        <>   
+            <label htmlFor="word-input">Enter word to be highlighted here</label>
+            <input id="word-input" type={"text"} onChange={(e)=>handleChange(e.target.value)} value={value}/>
+        </>
+    )
 }
-
-
-export default App;
